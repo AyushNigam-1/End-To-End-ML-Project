@@ -1,0 +1,1 @@
+[2024-09-29 17:25:32,424] 117 root - ERROR - Error occurred: Error Occured in Python Script Name [/home/ayush/Code/Modular-ML-Project/src/components/data_transformation.py] line number [55] error message [[Errno 2] No such file or directory: 'artifcats/train.csv']

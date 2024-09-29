@@ -1,0 +1,4 @@
+[2024-09-29 17:26:32,333] 58 root - INFO - Read train and test data
+[2024-09-29 17:26:32,333] 59 root - INFO - Obtaining preprocessing object
+[2024-09-29 17:26:32,339] 71 root - INFO - Applying preprocessing object on training and testing dataframes
+[2024-09-29 17:26:32,340] 117 root - ERROR - Error occurred: Error Occured in Python Script Name [/home/ayush/Code/Modular-ML-Project/src/components/data_transformation.py] line number [75] error message [A given column is not a column of the dataframe]
