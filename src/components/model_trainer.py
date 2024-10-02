@@ -24,7 +24,7 @@ class ModelTrainer:
     def __init__(self):
         self.model_trainer_config= ModelTrainerConfig()
 
-    def initiate_model_trainer(self,train_array,test_array,preprocessor_path):
+    def initiate_model_trainer(self,train_array,test_array):
         X_train,y_train,X_test,y_test = (
             train_array[:,:-1],
             train_array[:,-1],
@@ -37,7 +37,7 @@ class ModelTrainer:
             "Gradient Regression":GradientBoostingRegressor(),
             "Linear Regression":LinearRegression(),
             "K_Neighbors Classifier":KNeighborsRegressor(),
-            "XGBResgressor":XGBRegressor(),
+            "XGBRegressor":XGBRegressor(),
             "AdaBoost Regressor":AdaBoostRegressor()
         }
         params= {
@@ -63,7 +63,6 @@ class ModelTrainer:
     },
     "Linear Regression": {
         'fit_intercept': [True, False],
-        'normalize': [True, False]
     },
     "K_Neighbors Classifier": {
         'n_neighbors': [3, 5, 7, 9],
